@@ -47,7 +47,7 @@ def main():
     credits = float(input("Enter the credits for this semester: "))
 
     while True:
-        print("\nCollege Cost Calculator")
+        print("College Cost Calculator")
         print("1. Cost per semester")
         print("2. Cost per month")
         print("3. Cost per class day")
@@ -56,7 +56,7 @@ def main():
         print("6. Worth It?")
         print("Q. Quit")
 
-        choice = input("Choose an option: ").strip().upper()
+        choice = input("Choose an option: ")
 
         if choice == "Q":
             print("Goodbye!")
