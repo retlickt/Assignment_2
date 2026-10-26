@@ -40,6 +40,11 @@ def cost_per_class(annual_cost, credits):
     return cost_per_credit(annual_cost, credits) * CS1430_CREDITS / CS1430_MEETINGS_PER_SEMESTER
 
 
+def cost_in_videogames(annual_cost):
+    video_game_cost = float(input("What is the cost of your video game? "))
+    """Give back what one video game costs in terms of class meetings."""
+    return annual_cost/video_game_cost
+
 # ---- PROGRAM ----
 
 def main():
@@ -53,7 +58,7 @@ def main():
         print("3. Cost per class day")
         print("4. Cost per credit")
         print("5. Cost per CS 1430 class")
-        print("6. Worth It?")
+        print("6. Cost in video game")
         print("Q. Quit")
 
         choice = input("Choose an option: ")
@@ -73,7 +78,7 @@ def main():
         elif choice == "5":
             print(f"Cost per CS 1430 class: ${cost_per_class(annual_cost, credits):.2f}")
         elif choice == "6":
-            print("Worth It? extension: compare this cost to the value of the class.")
+            print(f"Cost in video games: {cost_in_videogames(annual_cost):.2f} video games")
         else:
             print("Invalid choice. Please select 1-6 or Q.")
 
