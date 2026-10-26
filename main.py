@@ -42,7 +42,6 @@ def cost_per_class(annual_cost, credits):
 
 def cost_in_videogames(annual_cost):
     video_game_cost = float(input("What is the cost of your video game? "))
-    """Give back what one video game costs in terms of class meetings."""
     return annual_cost/video_game_cost
 
 # ---- PROGRAM ----
